@@ -9,3 +9,4 @@ This project is given in Bil481 Software Engineering as an homework to,
 
 P.S. I hope we will learn at the end and may contribute the society better.
 
+[![Build Status](https://travis-ci.org/AlperenElbasan/myDemoApp.svg?branch=master)](https://travis-ci.org/AlperenElbasan/myDemoApp)
