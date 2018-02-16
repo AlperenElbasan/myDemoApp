@@ -64,6 +64,38 @@ public class App
             },
             new MustacheTemplateEngine());
     }
+    /**
+	 * 
+	 * Method which takes array a and b and 
+	 * copy paste every String in the range of
+	 * c < i < d as a[i] -> b[x], where initially x=0,
+	 * and with each iteration x++.
+	 * @author Alperen ELBASAN
+	 * @since 2.16.2018
+	 * @param a
+	 * @param b
+	 * @param c
+	 * @param d
+	 * @return Changed copy-pasted b. 
+	 * */
+	public static String[] copyPaste(String[] a, String[] b, int c,int d){
+		
+		if(a == null)
+			return null;
+		if(b == null)
+			return null;
+		
+		if(d-c+1 > b.length)
+			return null;
+		if(c > a.length)
+			return null;
+		
+		for(int x =0, y=c; y <= d; y++, x++){
+			b[x] = a[y];
+		}
+		
+		return b;
+	}
 
     static int getHerokuAssignedPort() {
         ProcessBuilder processBuilder = new ProcessBuilder();
