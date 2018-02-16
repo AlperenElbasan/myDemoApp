@@ -5,7 +5,7 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 import java.util.ArrayList;
 import java.util.Arrays;
-import org.junit.Test;
+
 
 /**
  * Unit test for simple App.
@@ -57,29 +57,29 @@ public class AppTest
       assertFalse(new App().search(null, 1));
     }
 
-	@Test
+
 	public void testReturnsNullIfAIsNull(){
 		String arr[] = {"1","2","3","4","5","4","3","2","1"};
 		assertNull(App.copyPaste(null , arr, 4, 1));		
 	}
-	@Test
+
 	public void testReturnsNullIfBIsNull(){
 		String arr[] = {"1","2","3","4","5","4","3","2","1"};
 		assertNull(App.copyPaste(arr, null , 4, 1));		
 	}
-	@Test
+
 	public void testReturnsNullIfBIsNotLargeEnough(){
 		String arr[] = {"0","1","2","3","4","5"};
 		String arr2[] = {"0","1","2","3"};
 		assertNull(App.copyPaste(arr , arr2, 0, 4));		
 	}
-	@Test
+
 	public void testReturnsNullIfAIsNotLargeEnough(){
 		String arr[] = {"0","1","2","3","4","5"};
 		String arr2[] = {"0","1","2","3"};
 		assertNull(App.copyPaste(arr , arr2, 7, 4));		
 	}
-	@Test
+
 	public void testReturnsArr2IfNoProblemOcccured(){
 		String arr[] = {"0","11","22","33","4","5"};
 		String arr2[] = {"323","1231","4522","1253"};
